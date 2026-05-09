@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Registration Form</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="card bg-light">
+
+        <h2 class="text-center mb-4">Student Registration</h2>
+
+        <!-- Form Start -->
+        <form id="registrationForm" novalidate>
+
+            <!-- Name -->
+            <div class="mb-3">
+                <label class="form-label">Name</label>
+
+                <input type="text" id="name" class="form-control" placeholder="Enter Name">
+
+                <!-- Error Message -->
+                <small id="nameError" class="text-danger"></small>
+            </div>
+
+            <!-- Email -->
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+
+                <input type="text" id="email" class="form-control" placeholder="Enter Email">
+
+                <!-- Error Message -->
+                <small id="emailError" class="text-danger"></small>
+            </div>
+
+            <!-- Password -->
+            <div class="mb-3">
+                <label class="form-label">Password</label>
+
+                <input type="password" id="password" class="form-control" placeholder="Enter Password">
+
+                <!-- Error Message -->
+                <small id="passwordError" class="text-danger"></small>
+            </div>
+
+            <!-- Button -->
+            <button type="submit" class="btn btn-custom w-100">
+                Register
+            </button>
+
+            <!-- Success/Error Message -->
+            <p id="message"></p>
+
+        </form>
+        <!-- Form End -->
+
+    </div>
+
+    <!-- External JS -->
+    <script src="script.js"></script>
+
+</body>
+</html>
